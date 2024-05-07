@@ -1,0 +1,31 @@
+.footerFrameModi{
+    background: #FFFFFF;
+    height: 400px;
+    width: 100%;
+}
+
+.footerModi{
+    background: #FFFFFF;
+    height: 400px;
+    width: 100%;
+}
+
+.contactUsModi{
+    background: #F5F5F7;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.contactUsHeader{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footerLogoFrame{
+    overflow: hidden;
+    height: 100px;
+}
+
+.footerLogoModi{
+    width: 250px;
+}

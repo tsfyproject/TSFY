@@ -1,0 +1,17 @@
+.navFontColor {
+    color: #FFFFFF;
+}
+
+.navBackground{
+    background-color: rgba(11, 14, 39, 0.9);
+    border-radius: 0 0 8px 8px;
+}
+
+.logoFrame{
+    overflow: hidden;
+    height: 43px;
+}
+
+.logoModi{
+    width: 30px;
+}

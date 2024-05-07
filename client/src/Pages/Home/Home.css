@@ -1,0 +1,117 @@
+
+* {
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+.backgroundColor{
+    background-color: #0B0E27;
+}
+.navFont{
+    color: #FFFFFF;
+    font-size: 20px;
+  }
+
+.headerText{
+    font-size: 72px;
+    font-weight: 800;
+}
+
+
+.descText{
+    font-size: 16px;
+}
+
+.buttonText{
+    font-size: 16px;
+    color: #0B0E27;
+    font-weight: 600;
+}
+
+.cardSection{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 40px;
+}
+
+.cardModi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.imgModi{
+    width: 300px;
+}
+
+.colModi{
+    display: flex;
+    justify-content: center;
+}
+
+.rowModi{
+    padding: 20px;
+}
+
+.tabButton{
+    color: #FFFFFF;
+}
+
+.container .nav .nav-link{
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+.container .nav .nav-link:hover {
+    background-color: transparent;
+    color: rgb(106, 136, 255);
+    font-weight: 900;
+    border-radius: 4px;
+}
+
+.container .nav .active{
+    background-color: transparent;
+    color: rgb(106, 136, 255);
+    font-weight: 900;
+    border-radius: 4px;
+}
+
+@media (max-width: 575.98px) { 
+    .imgModi{
+        width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .imgModi{
+        width: 100%;
+    }
+}
+
+@media (max-width: 991.98px) { 
+    .imgModi{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1199.98px) { 
+    .imgModi{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1399.98px) { 
+    
+}
+
+.filterFrame{
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
