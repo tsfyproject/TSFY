@@ -237,8 +237,8 @@ export default function Admin() {
 	};
 
 	return (
-		<div>
-			<Container className="vh-auto ">
+		<div className="vh-auto admin-bg">
+			<Container className="vh-auto admin-bg">
 				<Row className="py-3">
 					<Col xs={12} className="text-end">
 						<Button
@@ -252,8 +252,8 @@ export default function Admin() {
 					</Col>
 				</Row>
 				<Row className="">
-					<Table striped bordered hover>
-						<thead>
+					<Table striped bordered hover className="table-striped" responsive="xl">
+						<thead >
 							<tr>
 								<th>รูปภาพ Youtuber</th>
 								<th>ข้อมูลของ Youtuber</th>
@@ -271,7 +271,7 @@ export default function Admin() {
 												alt="youtuber"
 											></img>
 										</td>
-										<td>
+										<td >
 											<p>ชื่อ : {data.ytbName}</p>
 										</td>
 										<td className="text-center">

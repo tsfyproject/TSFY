@@ -138,8 +138,8 @@ export default function CreateBlog() {
 	}, [readyToCreate]);
 
 	return (
-		<div>
-			<Container>
+		<div className="vh-100 admin-bg">
+			<Container className="vh-auto admin-bg text-white">
 				<Form>
 					<Row>
 						<Container className="regisImage text-center">
@@ -150,6 +150,8 @@ export default function CreateBlog() {
 											style={{
 												position: "relative",
 												display: "inline-block",
+												backgroundColor: "white",
+												borderRadius: "30px",
 											}}
 											className="mb-5 mt-3"
 										>
@@ -261,7 +263,7 @@ export default function CreateBlog() {
 								</Button>
 							</Col>
 							<Col className="text-center">
-								<Button variant="secondary" className="w-75" href="/admin">
+								<Button variant="danger" className="w-75" href="/admin">
 									ยกเลิก
 								</Button>
 							</Col>

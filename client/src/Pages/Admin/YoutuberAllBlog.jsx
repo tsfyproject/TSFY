@@ -84,9 +84,9 @@ export default function YoutuberAllBlog() {
 	};
 
 	return (
-		<div>
-			<Container className="p-5 text-center">
-				<h1 className="mb-5">บทความทั้งหมด ของ {youtubers.ytbName} </h1>
+		<div className="vh-auto admin-bg">
+			<Container className="vh-100 p-5 ">
+				<h1 className="mb-5 text-white text-center">บทความทั้งหมด ของ {youtubers.ytbName} </h1>
 				<Row className="py-3">
 					<Col xs={12} className="text-end">
 						<Button variant={"secondary"} className="end-0" href="/admin">
@@ -95,22 +95,23 @@ export default function YoutuberAllBlog() {
 						</Button>
 					</Col>
 				</Row>
-				<Row>
+				<Row >
 					{allblogs.length > 0 ? (
 						allblogs.map((allblogs) => (
-							<Container className="bg-white mb-3">
+							<Container className="bg-white mb-3 rounded">
 								<Row>
-									<Col>
+									<Col xs={12} md={12} lg={3} xl={2} className="text-center pt-3 pb-3">
 										<img
 											src={allblogs.blogThumbnail}
 											alt="thumbnail"
 											className="img-thumbnail"
 										></img>
 									</Col>
-									<Col className="m-auto">
+									<Col className="m-auto" xs={12} md={124} lg={4} xl={6}>
 										<p>ชื่อบทความ : {allblogs.blogTitle}</p>
 									</Col>
-									<Col className="m-auto">
+									<Col className="m-auto me-3" xs={12} md={12} lg={4} xl={3}>
+										<Row className="ps-3 pe-3">
 										<Button
 											href={`/edit-blog/${allblogs._id}`}
 											className=""
@@ -118,13 +119,18 @@ export default function YoutuberAllBlog() {
 										>
 											แก้ไขบทความ
 										</Button>
+										</Row>
+										<Row className="p-3">
 										<Button
 											onClick={() => handleOpenModalConfirmDelete(allblogs._id)}
 											variant="danger"
-											className="ms-3"
+											className=""
 										>
 											ลบบทความ
 										</Button>
+										</Row>
+										
+										
 									</Col>
 								</Row>
 							</Container>

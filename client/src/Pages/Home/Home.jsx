@@ -18,6 +18,7 @@ import InputGroup from "react-bootstrap/InputGroup";
 import Nav from "react-bootstrap/Nav";
 import "@fortawesome/fontawesome-free/css/all.css";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
+import HowTo from "../../Pictures/HowTo.png";
 
 import axios from "axios";
 
@@ -265,6 +266,13 @@ export default function Home() {
                 Youtuber ได้และสามารถหาเพื่อนได้จากที่นี่
               </label>
               <Container className="mx-auto mb-5 text-center">
+                  <Image
+                          src={HowTo}
+                          className="imgModi"
+                          rounded
+                        />
+              </Container>
+              <Container className="mx-auto mb-5 text-center">
                 <div className="mx-5 py-3 w-auto  d-flex">
                   <Row className="p-4 d-flex mx-auto filterFrame">
                     <Col className="w-100" lg={2}>
@@ -306,6 +314,7 @@ export default function Home() {
           </Col>
         </Row>
       </Container>
+
       <Container className="cardSection mb-3" id="mainSec">
         <ButtonGroup
           aria-label="Basic example"

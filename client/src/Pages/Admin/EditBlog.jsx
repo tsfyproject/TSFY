@@ -132,10 +132,10 @@ export default function EditBlogEdit() {
 		}
 	}, [patchBlog]);
 	return (
-		<div>
-			<Container className="vh-auto pt-5">
+		<div className="vh-auto admin-bg">
+			<Container className="vh-100 admin-bg pt-5">
 				<Form>
-					<Row>
+					<Row className="text-white">
 						<h1>แก้ไข Blog</h1>
 						<Container className="regisImage text-center">
 							<Container>
@@ -170,7 +170,7 @@ export default function EditBlogEdit() {
 											/>
 											<label
 												htmlFor="upload-input"
-												className="text-center w-100 pt-4"
+												className="text-center w-100 pt-4 "
 												style={{
 													position: "absolute",
 													top: "110%",
@@ -196,7 +196,7 @@ export default function EditBlogEdit() {
 							</Container>
 						</Container>
 					</Row>
-					<Row>
+					<Row className="text-white">
 						<Row className="mt-3">
 							<Col>
 								<Form.Group className="mb-3">
@@ -265,7 +265,7 @@ export default function EditBlogEdit() {
 								</Button>
 							</Col>
 							<Col className="text-center">
-								<Button variant="secondary" className="w-75" href="/admin">
+								<Button variant="danger" className="w-75" href="/admin">
 									ยกเลิก
 								</Button>
 							</Col>
